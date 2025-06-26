@@ -14,6 +14,10 @@ Alumnos_AP = [
         "Correo": ["ben.andrade@duocuc.cl","ben.astudillo@duocuc.cl","am.barria@duocuc.cl","bri.bravom@duocuc.cl","mar.burgosc@duocuc.cl","fl.bustos@duocuc.cl","ben.camposa@duocuc.cl","ber.cisternas@duocuc.cl","w.contreras@duocuc.cl","cla.cordovam@duocuc.cl","gera.cortes@duocuc.cl","s.escalona@duocuc.cl","ja.gajardon@duocuc.cl","jonat.garridos@duocuc.cl","elia.gonzalezm@duocuc.cl","mat.guerraj@duocuc.cl","juac.hernandez@duocuc.cl","felip.hernandezs@duocuc.cl","ig.millar@duocuc.cl","han.morales@duocuc.cl","ho.navarrete@duocuc.cl","mar.norambuenas@duocuc.cl","cr.olivaresm@duocuc.cl","dim.opazo@duocuc.cl","lu.roar@duocuc.cl","seb.saezr@duocuc.cl","el.sanmartin@duocuc.cl","be.santibañezn@duocuc.cl","max.segovia@duocuc.cl","al.urrutian@duocuc.cl"]
     }
 ]
+# La mala cuea hermano
+Alumnos_AP[0]["Nombre"].remove("Martin")
+Alumnos_AP[1]["Apellido"].remove("Burgos")
+Alumnos_AP[2]["Correo"].remove("mar.burgosc@duocuc.cl")
 
 # Se guardan en variables los diccionarios que vamos a usar
 
