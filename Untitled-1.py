@@ -1,6 +1,8 @@
 import os 
 os.system("cls")
 
+
+
 # Lista de alumnos Duoc UC ses
 
 Alumnos_AP = [
@@ -41,3 +43,4 @@ for i in range(0, len(Nombre), 2):
 
     print(f"{bloque1}    {bloque2}")
 print()
+
