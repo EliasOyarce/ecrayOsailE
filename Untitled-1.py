@@ -13,26 +13,29 @@ Alumnos_AP = [
     }
 ]
 
+# Se guardan en variables los diccionarios que vamos a usar
+
+# Se busca "Nombre" en el diccionario que está en el indice 0 de la lista (Alumnos_AP)
 Nombre = Alumnos_AP[0]["Nombre"]
+# Se busca "Apellido" en el diccionario que está en el indice 1 de la lista (Alumnos_AP)
 Apellido = Alumnos_AP[1]["Apellido"]
+# Se busca "Correo" en el diccionario que está en el indice 2 de la lista (Alumnos_AP)
 Correo = Alumnos_AP[2]["Correo"]
 
-print("numero de alumnos ingresados", len(Nombre))
-print()
-
-cont = 1
+print("numero de alumnos ingresados", len(Nombre),"\n")
+o = 1
 
 for i in range(0, len(Nombre), 2):
     full1 = f"{cont}) {Nombre[i]} {Apellido[i]}"
     correo1 = Correo[i]
     bloque1 = f"{full1:<25} {correo1:<30}"
-    cont += 1
+    o += 1
 
     if i + 1 < len(Nombre):
         full2 = f"{cont}) {Nombre[i+1]} {Apellido[i+1]}"
         correo2 = Correo[i+1]
         bloque2 = f"{full2:<25} {correo2:<30}"
-        cont += 1
+        o += 1
     else:
         bloque2 = ""
 
