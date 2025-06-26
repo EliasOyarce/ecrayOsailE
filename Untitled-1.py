@@ -26,13 +26,13 @@ print("numero de alumnos ingresados", len(Nombre),"\n")
 o = 1
 
 for i in range(0, len(Nombre), 2):
-    full1 = f"{cont}) {Nombre[i]} {Apellido[i]}"
+    full1 = f"{o}) {Nombre[i]} {Apellido[i]}"
     correo1 = Correo[i]
     bloque1 = f"{full1:<25} {correo1:<30}"
     o += 1
 
     if i + 1 < len(Nombre):
-        full2 = f"{cont}) {Nombre[i+1]} {Apellido[i+1]}"
+        full2 = f"{o}) {Nombre[i+1]} {Apellido[i+1]}"
         correo2 = Correo[i+1]
         bloque2 = f"{full2:<25} {correo2:<30}"
         o += 1
