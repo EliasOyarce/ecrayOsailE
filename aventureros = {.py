@@ -71,9 +71,13 @@ while Programa_Activo:
         print("Valor ingresado invalido")
         continue
     if opc == 1:
-        codigo = str(input("Ingrese el codigo del aventurero: "))
-        nombre = str(input("Ingrese nombre del aventurero: "))
-        edad = int(input("Ingrese edad del aventurero: "))
+        try:
+            codigo = str(input("Ingrese el codigo del aventurero: "))
+            nombre = str(input("Ingrese nombre del aventurero: "))
+            edad = int(input("Ingrese edad del aventurero: "))
+        except ValueError:
+            print("Error: Debe llenar los campos correctamente.")
+            continue
         registrar_aventureros(aventureros,codigo,[nombre,edad])
     elif opc == 2:
         while True:
@@ -98,6 +102,6 @@ while Programa_Activo:
         mostrar_participantes(aventureros)
     elif opc == 0:
         print("Saliendo del programa...")
-        break
+        Programa_Activo = False
     else:
         print("Opcion invalida. Intente Nuevamente.")
